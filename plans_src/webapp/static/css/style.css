@@ -1,0 +1,112 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgba(77, 219, 255, 0.83);
+    color: #222222;
+    margin-top: 60px;
+}
+.navbar {
+    display: block;
+    background: #4ddbff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: 0;
+    box-sizing: border-box;
+    padding: 7px 30px;
+}
+.navbar_menu {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    color: #fffee8;
+}
+.navbar_menu li {
+    display: inline-block;
+    font-size: 30px;
+    margin: 20px 60px;
+}
+.navbar_menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 20px;
+}
+.container {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+}
+.btn{
+    font-size: 20px;
+    border-radius: 7px;
+    width: 150px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.jumbotron{
+    margin-top: 150px;
+    background-color: #94c4dc;
+    color: midnightblue;
+}
+.title_card {
+    font-size: 40px;
+}
+.date{
+    font-size: 35px;
+    font-weight: bold;
+}
+.lead{
+    font-size: 25px;
+}
+.container_index {
+  padding: 10rem 0em;
+}
+
+.table-image {
+  td, th {
+      vertical-align: middle;
+ }
+}
+td.vcenter {
+    vertical-align: middle;
+}
+.del{
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 10rem;
+    text-align: center;
+}
+.required{
+    font-weight: bold;
+    color: #bf1f6d;
+}
+.form-error {
+    color: red;
+    font-size: 18px;
+    margin: 5px 0 0 0
+}
+
+.field-error {
+    border: solid 1px red;
+    box-shadow: red 0 0 3px;
+}
+.form-control {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    border: solid 1px lightgray;
+    box-sizing: border-box;
+    background: white;
+}
+.fields{
+    font-size: 20px;
+}
+.table-dark{
+    color: black;
+}

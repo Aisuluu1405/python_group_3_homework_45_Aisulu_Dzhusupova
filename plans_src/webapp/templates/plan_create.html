@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Create Plan{% endblock %}
+
+{% block content %}
+    <h1>Create Plan</h1>
+    <form method="POST" action="{% url "create_plan" %}">
+        {% include 'partial/plan_form.html' with button_text='Create' %}
+    </form>
+{% endblock %}

@@ -1,0 +1,60 @@
+[
+{
+  "model": "webapp.plan",
+  "pk": 3,
+  "fields": {
+    "title": "Job",
+    "text": "Meetings with accounting officer",
+    "status": "new",
+    "deadline": "2019-10-02"
+  }
+},
+{
+  "model": "webapp.plan",
+  "pk": 55,
+  "fields": {
+    "title": "Job",
+    "text": "To develop a budget for the new \r\n  2020, to hear reports on loans. \r\n            Consider changing tariffs for servicing \r\nlegal entities!",
+    "status": "in_progress",
+    "deadline": "2019-10-02"
+  }
+},
+{
+  "model": "webapp.plan",
+  "pk": 57,
+  "fields": {
+    "title": "Children",
+    "text": "Aidin-school, tennis,\r\n   Nadina-school, english,\r\n        Nursultan-football!",
+    "status": "done",
+    "deadline": "2019-08-30"
+  }
+},
+{
+  "model": "webapp.plan",
+  "pk": 89,
+  "fields": {
+    "title": "Education",
+    "text": "\u0417\u0430\u043a\u043e\u043d\u0447\u0438\u043b\u0430 \r\n    \u0434\u043e\u043c\u0430\u0448\u043d\u044e\u044e \u0440\u0430\u0431\u043e\u0442\u0443 \u211645",
+    "status": "done",
+    "deadline": "2019-09-16"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$NvjquG9nkvnr$gEy2eCKI6og299mpNaY3BuKLg6us68ZvGjZCeEz7iF0=",
+    "last_login": "2019-09-13T14:40:58.766Z",
+    "is_superuser": true,
+    "username": "Admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-09-05T08:41:25.732Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

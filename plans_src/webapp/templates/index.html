@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form method="POST" action="{% url 'delete_item'%}">
+    {% csrf_token %}
+        <div class="container_index">
+            <div class="row">
+                <div class="col-12">
+                    <table class="table">
+                        <thead>
+                        <tr class="table-dark">
+                            <th scope="col"><input type="checkbox"></th>
+                            <th scope="col">id</th>
+                            <th scope="col">Plan Title</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Deadline</th>
+                        </tr>
+                        </thead>
+                        {% for plan in plans %}
+                            <tbody>
+                            <tr class="table-info">
+                                <td class="vcenter"><input type="checkbox" name="choice_item" value="{{ plan.pk }}"/></td>
+                                <td>{{ plan.pk }}</td>
+                                <td><a href="{% url 'view_plan' plan.pk %}">{{ plan.title }}</td>
+                                <td>{{ plan.get_status_display }}</td>
+                                <td>{{ plan.deadline|date:'Y-m-d'}}</td>
+                            </tr>
+                            </tbody>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+                <p><input type="submit" value="Delete" class="btn btn-secondary"></p>
+        </div>
+    </form>
+{% endblock %}

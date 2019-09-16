@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Delete Plan{% endblock %}
+
+{% block content %}
+    <h1 class="del">Are you sure want to delete plan "{{ plan }}"?</h1>
+    <form method="POST" action="{% url "delete_plan" plan.pk %}" class="text-center">
+        {% csrf_token %}
+        <p><input type="submit" value="Yes, delete" class="btn btn-secondary"></p>
+        <p><a href="{% url 'view_plan' plan.pk %}" class="btn btn-primary">No, cancel</a></p>
+    </form>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+
+{% block title %}{{ plan.title }}{% endblock %}
+
+{%  block content %}
+    <div class="jumbotron">
+        <h1 class="title_card">{{ plan.title }}</h1>
+        <pre><p class="lead">{{ plan.text }}</p></pre>
+        <p class="lead">Status: {{ plan.get_status_display }}.</p>
+        <hr class="my-4">
+        <p class="date">Deadline: {{ plan.deadline|date:'Y-m-d' }}</p>
+        <p><a href="{% url 'edit_plan' plan.pk %}" class="btn btn-primary" >Edit</a></p>
+        <p><a href="{% url 'delete_plan' plan.pk %}" class="btn btn-primary">Delete</a></p>
+
+    </div>
+{% endblock %}
